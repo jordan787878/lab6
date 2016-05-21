@@ -1,0 +1,32 @@
+1.
+ 1) Yes. constructor need to be the same as the class name. So,a Base-class
+    constructors cannot be inherited by derived classes.
+ 2) No. Composition deals with has-a relationship. While inheritence deals
+    with is-a relationship.
+ 3) No. It's odd to say that Student is a Faculty or Course.
+ 4) Yes. derived classes has no "direct" access of private members of the 
+    base-class. Yet, this can be done by using public member function get()
+    if defined.
+ 5) Yes.base-class protected members is accessible anywhere.
+
+2. 
+             _ _ _ _ _
+            |         |
+            |         |
+            | Student |  
+            |         |  
+            |_ _ _ _ _|
+               
+                ^   ^
+                |   |___________________       
+                |                       |
+                |                       |
+      __________|___________    ____________________  
+     |                      |  |                    | 
+     | UndergraduateStudent |  |  GraduateStudent   | 
+     |______________________|  |____________________|
+
+
+  UndergraduateStudent is-a student.
+  GraduateStudent also is-a student.
+  
